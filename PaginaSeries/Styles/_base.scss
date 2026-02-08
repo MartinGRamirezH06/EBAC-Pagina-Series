@@ -4,3 +4,15 @@ $grey-Metally:#B0B0B0;
 $blue-Cian:#00E5FF;
 $white:#ffffff;
 $bluePlay:#3F409C;
+
+//Mixins
+@mixin tablets{
+    @media (max-width:1000px){
+        @content;
+    }
+}
+@mixin phones{
+    @media (max-width:450px){
+        @content;
+    }
+}

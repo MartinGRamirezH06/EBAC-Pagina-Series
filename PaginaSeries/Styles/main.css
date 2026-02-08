@@ -2,6 +2,9 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .header .header__seach {
   width: 40%;
@@ -65,6 +68,48 @@ img {
 .header .header__seach button .seach__icon-seach img {
   width: 2.5rem;
 }
+@media (max-width: 1000px) {
+  .header img {
+    width: 20%;
+  }
+  .header .header__seach {
+    width: 50%;
+    justify-content: space-between;
+  }
+  .header .header__seach .seach__input {
+    width: 80%;
+    height: 2rem;
+  }
+  .header .header__seach button {
+    width: 30%;
+    height: 2.5rem;
+  }
+  .header .header__seach button .seach__icon-seach img {
+    width: 2rem;
+  }
+  .header .header__seach button:hover {
+    cursor: none;
+    transition: none;
+  }
+}
+@media (max-width: 450px) {
+  .header img {
+    width: 30%;
+  }
+  .header .header__seach {
+    width: 80%;
+  }
+  .header .header__seach .seach__input {
+    height: 2rem;
+  }
+  .header .header__seach button {
+    width: 30%;
+    height: 2rem;
+  }
+  .header .header__seach button .seach__icon-seach img {
+    width: 2rem;
+  }
+}
 
 .main-container {
   gap: 2rem;
@@ -114,4 +159,13 @@ img {
 }
 .main-container .main-container__card .card__cal {
   font-size: 1rem;
+}
+@media (max-width: 1000px) {
+  .main-container .main-container__card {
+    padding: 1rem 0;
+    gap: 0.5rem;
+  }
+  .main-container .main-container__card .card__gen {
+    font-size: 0.7rem;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,8 +1,6 @@
 body{
     margin: 0;
     font-family: "Arimo", sans-serif;
-    //background: conic-gradient(from 180deg at 50% 50%, #05070A 0%, #003B46 25%, #05070A 100%);
-    //background: radial-gradient(circle, #0F172A 0%, #020617 100%);
     background: linear-gradient(to right, #0D1117,#1E1E4F );
 }
 img{
@@ -10,6 +8,7 @@ img{
 }
 .header{
     background-color: $blue-Dark;
+
 
     .header__seach{
         .seach__input{
@@ -39,6 +38,54 @@ img{
 
         }
     }
+    @include tablets{
+        img{
+            width: 20%;
+        }  
+        .header__seach{
+            width: 50%;
+            justify-content: space-between;
+            .seach__input{
+                width: 80%;
+                height: 2rem;
+            }
+            button{
+                width: 30%;
+                height: 2.5rem;
+                .seach__icon-seach{
+                    img{
+                        width: 2rem;
+                    }
+                }
+                &:hover{
+                    cursor: none;
+                    transition: none;
+                }
+            }
+        }
+    }
+    @include phones{
+        img{
+            width: 30%;
+        }  
+        .header__seach{
+            width: 80%;
+            .seach__input{
+
+                height: 2rem;
+            }
+            button{
+                width: 30%;
+                height: 2rem;
+                .seach__icon-seach{
+                    img{
+                        width: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
 }
 .main-container{
     gap: 2rem;
@@ -90,6 +137,15 @@ img{
         }
         .card__cal{
             font-size: 1rem;
+        }
+    }
+    @include tablets{
+        .main-container__card{
+            padding: 1rem 0;
+            gap: 0.5rem;
+            .card__gen{
+                font-size: 0.7rem;
+            }
         }
     }
 

@@ -33,7 +33,7 @@ const seachSerie=async()=>{
                 seriesGrid.appendChild(cardResult)
             }
 
-
+            inputSeach.value="";
         }catch(error){
             console.error("ERROR EN EL AXIOS:" +error);
         }
