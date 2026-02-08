@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    font-family: "Arimo", sans-serif;
+    //background: conic-gradient(from 180deg at 50% 50%, #05070A 0%, #003B46 25%, #05070A 100%);
+    //background: radial-gradient(circle, #0F172A 0%, #020617 100%);
+    background: linear-gradient(to right, #0D1117,#1E1E4F );
+}
+img{
+    width: 180px;
+}
+.header{
+    background-color: $blue-Dark;
+
+    .header__seach{
+        .seach__input{
+            width: 40%;
+            height: 3rem;
+            background-color: $white;
+            border-radius: 10px;
+            color: $grey-Metally;
+            font-size: 1.5em;
+        }
+        button{
+            width: 10%;
+            height: 3rem;
+            background-color: $bluePlay;
+            border-radius: 10px;
+            transition: all 0.25s ease;
+            border-color:$blue-Dark ;
+            cursor: pointer;
+            &:hover{
+                background-color: $blue-Cian;
+            }
+            .seach__icon-seach{
+                img{
+                    width: 2.5rem;
+                }
+            }
+
+        }
+    }
+}
+.main-container{
+    gap: 2rem;
+    width: 80%;
+    margin: 2rem auto;
+    box-sizing: border-box;
+
+
+    .main-container__card{
+        background-color: $white;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: all 0.25s ease;
+        align-items: center;
+        margin: 1rem;
+        gap: 0.5rem;
+        padding: 1rem 0.5rem;
+        cursor: pointer;
+
+        &:hover{
+            transform: translateY(-8px);
+        }
+
+        .card__img{
+            width: 90%;
+            border-radius: 25px;
+        }
+        .card__title{
+            font-size: 2rem;
+            font-weight: 700;
+            color: $blue-Dark;
+        }
+        .card__gen{
+            border-radius: 20px;
+            padding: 5px 10px;
+            margin: 5px 5px 5px 0;
+            color: $white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            background-color: $blue-Dark;
+        }
+        .card__containerCalification{
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 8%;
+            }
+        }
+        .card__cal{
+            font-size: 1rem;
+        }
+    }
+
+}

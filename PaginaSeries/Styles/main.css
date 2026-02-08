@@ -1,0 +1,117 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header__seach {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  gap: 1em;
+  margin: 1em;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.main-container .main-container__card {
+  display: flex;
+  flex-direction: column;
+}
+.main-container .main-container__card .card__container-Gens {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .main-container__card .card__containerCalification {
+  display: flex;
+}
+
+body {
+  margin: 0;
+  font-family: "Arimo", sans-serif;
+  background: linear-gradient(to right, #0D1117, #1E1E4F);
+}
+
+img {
+  width: 180px;
+}
+
+.header {
+  background-color: #0D1117;
+}
+.header .header__seach .seach__input {
+  width: 40%;
+  height: 3rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #B0B0B0;
+  font-size: 1.5em;
+}
+.header .header__seach button {
+  width: 10%;
+  height: 3rem;
+  background-color: #3F409C;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  border-color: #0D1117;
+  cursor: pointer;
+}
+.header .header__seach button:hover {
+  background-color: #00E5FF;
+}
+.header .header__seach button .seach__icon-seach img {
+  width: 2.5rem;
+}
+
+.main-container {
+  gap: 2rem;
+  width: 80%;
+  margin: 2rem auto;
+  box-sizing: border-box;
+}
+.main-container .main-container__card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  align-items: center;
+  margin: 1rem;
+  gap: 0.5rem;
+  padding: 1rem 0.5rem;
+  cursor: pointer;
+}
+.main-container .main-container__card:hover {
+  transform: translateY(-8px);
+}
+.main-container .main-container__card .card__img {
+  width: 90%;
+  border-radius: 25px;
+}
+.main-container .main-container__card .card__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0D1117;
+}
+.main-container .main-container__card .card__gen {
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 5px 5px 5px 0;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  background-color: #0D1117;
+}
+.main-container .main-container__card .card__containerCalification {
+  align-items: center;
+  justify-content: center;
+}
+.main-container .main-container__card .card__containerCalification img {
+  width: 8%;
+}
+.main-container .main-container__card .card__cal {
+  font-size: 1rem;
+}/*# sourceMappingURL=main.css.map */
